@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+     <link rel="stylesheet" type="text/css" href="main.css">
+ <body>
+     
+ <form>
+  <h1>Create Account</h1>
+  <label for="name">Nombre</label> 
+     <br/>
+     
+  <input type="text" id="name" name="name" pattern="[A-Za-z]+" required>
+        <br/>
+
+  <label for="email">Email</label>
+     <br/>
+  <input type="email" id="email" name="email" pattern="[A-Za-z0-9]+\@mail.com" required>
+      <br/>                                                                        
+  <label for="password">Clave</label>
+<br/>
+  <input type="password" id="clave" name="clave" minlength="8"  required>
+<br/>
+
+  <label for="confirm-password">Confirme su clave</label>
+<br/>
+  <input type="password" id="confirm-password" name="confirm-password" minlength=“8” required>
+<br/>
+
+  <input type="submit" value= "Enviar" onclick="submitForm()">
+</form> 
+      <script src="index.js"></script>
+  </body>
+  </html>
